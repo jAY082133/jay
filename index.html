@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cover</title>
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <nav>
+           
+            <span><a href="index.html">Cover</a></span>
+            <span><a href="family members.html">Family members</a></span>
+            <span><a href="greetings.html">Greetings</a></span>
+        
+        </nav>
+        <main>
+             
+        
+<!--  topic 1-->
+        <div class="content">
+            <span class="c1">
+                <div class="title">Marry Chistmass and Happy New year</div>
+                <p class="subtitle">
+                   As the twinkling lights of Christmas illuminate our home and the New Year beckons with the promise of new beginnings, I find myself reflecting on the precious moments we've shared and the unwavering bond that unites us. To my wonderful siblings, who add laughter and love to every day, and to our incredible parents, whose wisdom and kindness guide us always - you are the heart of my Christmas joy and the foundation of my New Year's hopes.
+                   <br>
+                   <br>
+                    Merry Christmas and a Happy New Year!
+                    <br>
+                    With all my love,
+                    <br>
+                    JAY AR CAPA
+                </p>
+                <div class="links">
+                    <div class="btn"><a href="https://youtu.be/3TE1R6tZ2aY" target="_blank">WATCH VIDEO</a></div>
+                </div>
+               
+            </span>        
+            <span class="c2">
+                <img id="gallery" src="imagess/tree.gif" alt="image here">
+                <div class="selectors">
+                    <div class="btnn">1</div>
+                    <div class="btnn">2</div>
+                    <div class="btnn">3</div>
+                    <div class="btnn">4</div>
+                    <div class="btnn">5</div>
+                    <div class="btnn">6</div>
+                    <div class="btnn">7</div>
+                    <div class="btnn">8</div>
+
+                </div>
+            </span>
+        </div>
+    
+        </main>
+
+    </body>
+    <script>
+        var btnn = document.getElementsByClassName("btnn")
+        var gallery = document.getElementById("gallery");
+  
+  
+        var image = new Array(
+          "imagess/1.jpg",
+          "imagess/2.jpg",
+          "imagess/3.jpg",
+          "imagess/4.jpg",
+          "imagess/5.jpg",
+          "imagess/6.jpg",
+          "imagess/7.jpg",
+          "imagess/8.jpg"
+  
+        );
+  
+        for(let i=0; i<btnn.length; i++){
+          btnn[i].onclick = function(){
+  
+            gallery.src = image[i];
+  
+          }
+        }
+       </script>
+
+</html>
